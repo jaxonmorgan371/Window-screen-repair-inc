@@ -3,139 +3,156 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hawaii Window Screen Repair</title>
+  <title>Hawaii Screen Repair</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center fixed;
-      background-size: cover;
+      background: #f9f9f9;
       color: #333;
+      line-height: 1.6;
     }
+
+    /* Header */
     header {
-      background: rgba(46, 125, 50, 0.9);
+      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center;
+      background-size: cover;
       color: white;
       text-align: center;
-      padding: 2rem 1rem;
+      padding: 4rem 2rem;
     }
     header h1 {
-      margin: 0;
       font-size: 2.5rem;
+      margin: 0;
     }
     header p {
-      margin-top: 0.5rem;
       font-size: 1.2rem;
+      margin-top: 0.5rem;
     }
-    main {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem;
+
+    /* Navbar */
+    nav {
+      background: #2e7d32;
+      padding: 0.7rem;
+      text-align: center;
     }
-    section {
-      margin-bottom: 2rem;
-    }
-    .card {
-      background: rgba(255, 255, 255, 0.95);
-      padding: 1.5rem;
-      border-radius: 12px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    }
-    h2 {
-      color: #2e7d32;
-      margin-bottom: 0.5rem;
-    }
-    .contact-info p {
-      margin: 0.3rem 0;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-    }
-    form label {
-      margin: 0.5rem 0 0.2rem;
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
       font-weight: bold;
     }
-    form input, form textarea {
-      padding: 0.7rem;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      font-size: 1rem;
+    nav a:hover {
+      text-decoration: underline;
     }
-    form textarea {
-      resize: vertical;
-      min-height: 100px;
+
+    /* Layout */
+    .container {
+      display: flex;
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
     }
-    form button {
-      margin-top: 1rem;
-      padding: 0.8rem;
-      background: #2e7d32;
-      color: white;
-      font-size: 1rem;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background 0.3s;
+    .main-content {
+      flex: 3;
+      margin-right: 2rem;
     }
-    form button:hover {
-      background: #1b5e20;
+    .sidebar {
+      flex: 1;
+      background: #fff;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
+
+    /* Cards */
+    .card {
+      background: #fff;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .card h2 {
+      color: #2e7d32;
+      margin-top: 0;
+    }
+
+    /* Footer */
     footer {
       text-align: center;
-      background: rgba(255, 255, 255, 0.8);
+      background: #eee;
       padding: 1rem;
-      font-size: 0.9rem;
-      color: #333;
-    }
-    a {
-      color: #2e7d32;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Hawaii Window Screen Repair</h1>
-    <p>Screen Replacements & Professional Window Cleaning</p>
+    <p>Professional Screen Replacement & Window Cleaning</p>
   </header>
 
-  <main>
-    <!-- About Us -->
-    <section class="card">
-      <h2>About Us</h2>
-      <p>Aloha! We provide high-quality <strong>window screen replacements</strong> and <strong>professional window cleaning</strong> throughout Hawaii. Whether your screens are torn, missing, or weather-worn, we’ll replace them so your home feels fresh again. Plus, we’ll make your windows shine with our expert cleaning service — bringing clear views of paradise back into your home.</p>
-    </section>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Screen Materials</a>
+    <a href="#">Service Areas</a>
+    <a href="#">Contact</a>
+  </nav>
 
-    <!-- Contact Info -->
-    <section class="card contact-info">
-      <h2>Contact Us</h2>
+  <div class="container">
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="card">
+        <h2>Welcome to Hawaii Screen Repair</h2>
+        <p>Aloha! We specialize in repairing and replacing window screens across Oahu and beyond. From torn screens to full replacements, we’ve got you covered. We also provide professional window cleaning to keep your views of paradise crystal clear.</p>
+      </div>
+
+      <div class="card">
+        <h2>Types of Screens We Offer</h2>
+        <ul>
+          <li><strong>Fiberglass:</strong> Affordable and durable for everyday use.</li>
+          <li><strong>Aluminum:</strong> Strong, weather-resistant mesh.</li>
+          <li><strong>Pet-Resistant:</strong> Thick mesh built to handle claws and paws.</li>
+          <li><strong>Solar Screens:</strong> Reduce heat and glare while blocking insects.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Where We Work on Oahu</h2>
+        <p>We proudly serve:</p>
+        <ul>
+          <li>Honolulu</li>
+          <li>Laie</li>
+          <li>Kaneohe</li>
+          <li>Kapolei</li>
+          <li>Mililani</li>
+          <li>Waipahu</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h3>Contact Us</h3>
       <p><strong>Phone:</strong> (808) 123-4567</p>
       <p><strong>Email:</strong> <a href="mailto:hawaiiscreens@example.com">hawaiiscreens@example.com</a></p>
-      <p><strong>Service Area:</strong> Oahu, Maui, Big Island, Kauai</p>
-    </section>
 
-    <!-- Request a Quote -->
-    <section class="card">
-      <h2>Request a Quote</h2>
+      <h3>Request a Quote</h3>
       <form action="mailto:hawaiiscreens@example.com" method="POST" enctype="text/plain">
         <label for="name">Your Name</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" id="name" name="name" required><br><br>
 
-        <label for="email">Your Email</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="phone">Your Phone</label>
-        <input type="tel" id="phone" name="phone">
+        <label for="email">Your Number</label>
+        <input type="email" id="email" name="email" required><br><br>
 
         <label for="message">How can we help?</label>
-        <textarea id="message" name="message" required></textarea>
+        <textarea id="message" name="message" rows="4" required></textarea><br><br>
 
-        <button type="submit">Send Request</button>
+        <button type="submit">Send</button>
       </form>
-    </section>
-  </main>
+    </aside>
+  </div>
 
   <footer>
     &copy; 2025 Hawaii Window Screen Repair. All Rights Reserved.
